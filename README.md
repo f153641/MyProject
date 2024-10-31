@@ -8,12 +8,12 @@
 - 框架 Vue
 
 ## 作品列表
-- [代辦清單](https://f153641.github.io/todolist/)
+- [代辦清單](https://f153641.github.io/todolist/) Vue
   ![image](https://github.com/f153641/MyProject/blob/main/todolist.png)
 ****
-- [天氣預報](https://f153641.github.io/weather/)
+- [天氣預報](https://f153641.github.io/weather/) 串接API
   ![image](https://github.com/f153641/MyProject/blob/main/weather.png)
 ****
-- [移動端靜態音樂網站](https://f153641.github.io/music-web/)
+- [移動端靜態音樂網站](https://f153641.github.io/music-web/) HTML、CSS靜態網站
   
   ![image](https://github.com/f153641/MyProject/blob/main/musicweb.png)
