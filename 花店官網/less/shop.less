@@ -1,0 +1,79 @@
+// out:../css/shop.css
+@import "./base.less";
+@import "./common.less";
+
+.container {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.mt {
+    margin-top: 110px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #000;
+    h3 {
+        font-size: clamp(16px, 3vw, 20px);
+        font-weight: 400;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+}
+
+.goods {
+    margin-bottom: 50px;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            background-color: #fff;
+            width: 16vw;
+            .pic {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            .txt {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 12px;
+                h4,
+                p,
+                a {
+                    margin-bottom: 12px;
+                    font-weight: 400;
+                    font-size: clamp(12px, 3vw, 16px);
+                }
+                a {
+                    padding: 5px 20px;
+                    border-radius: 17px;
+                    color: #fff;
+                    background-color: #b3a796;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .goods ul {
+        flex-wrap: wrap;
+        li {
+            margin-bottom: 20px;
+            width: 48%;
+        }
+    }
+}
+
+@media (any-hover: hover) {
+    .goods li:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+}

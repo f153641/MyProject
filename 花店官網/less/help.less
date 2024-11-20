@@ -1,0 +1,89 @@
+// out:../css/help.css
+@import "./base.less";
+@import "./common.less";
+
+.container {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.title {
+    margin-top: 110px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    border-left: 5px solid #231c0f;
+    h3 {
+        font-size: clamp(18px, 3vw, 20px);
+        font-weight: 400;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    .before {
+        width: 50%;
+    }
+    .after {
+        width: 50%;
+    }
+
+    h4,
+    h5 {
+        margin-bottom: 10px;
+        color: #a52626;
+        font-weight: 400;
+        font-size: clamp(16px, 3vw, 20px);
+    }
+    h5 {
+        font-size: clamp(14px, 3vw, 18px);
+    }
+    li {
+        display: flex;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        line-height: 30px;
+        font-size: clamp(12px, 3vw, 16px);
+        span {
+            margin-right: 10px;
+        }
+    }
+
+    .line {
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 2px;
+        background-color: #231c0f;
+    }
+}
+
+.pic {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 100%;
+    img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-wrap: wrap;
+        .before {
+            width: 100%;
+        }
+        .after {
+            width: 100%;
+        }
+    }
+    .pic {
+        flex-wrap: wrap;
+        img {
+            width: 100%;
+        }
+    }
+    .line {
+        display: none;
+    }
+}
